@@ -1,0 +1,94 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenitore principale per centrare la calcolatrice */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Stile della calcolatrice */
+.calculator {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #222;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Stile del display */
+#display {
+  width: 95%;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+}
+
+/* Layout dei pulsanti */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Stile dei pulsanti */
+button {
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  background-color: #bbb;
+}
+
+/* Stile per i pulsanti degli operatori */
+button:nth-child(4n) {
+  background-color: #ff9500;
+  color: white;
+}
+
+button:nth-child(4n):hover {
+  background-color: #e08900;
+}
+
+button:nth-child(4n):active {
+  background-color: #c76e00;
+}
+
+/* Stile per il pulsante "C" */
+button:last-child {
+  background-color: #d9534f;
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: #c9302c;
+}
+
+button:last-child:active {
+  background-color: #ac2925;
+}
